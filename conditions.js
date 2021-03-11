@@ -56,7 +56,9 @@ if (m>n && m>l && m>o && m>p) {                                         //ok
     console.log (o)
 } else
     console.log (p)
-/* var max=a
+
+/* ili ovako 
+var max=a
 if (b> max) {
     max+b
 }
