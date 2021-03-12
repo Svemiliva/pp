@@ -3,21 +3,22 @@
 
 var a = 2
 var b = 3
-var result
-switch (result) {
-    case a + b:
-        console.log(result)
+var operation = "+"
+switch (operation) {
+    case "+":
+        console.log(a + b)
 
-        break;
-    case a - b:
-        console.log(result)
-        break;
-    case a * b:
-        console.log(result)
-        break;
-    case a / b:
-        console.log(result)
 
+    case "-":
+        console.log(a - b)
+
+    case "*":
+        console.log(a * b)
+
+    case "/":
+        console.log(a / b)
+        break;
     default:
-        break;
+        console.log("nothing")
+        break; //Watch out for division by zero! ne znam
 }
