@@ -1,21 +1,28 @@
 /*
-2. Write a program to join all elements of the array into a string skipping elements
-that are undefined, null, NaN or Infinity.
-Input: [NaN, 0, 15, false, -22, '', undefined, 47, null]
-	Output: “015false-2247”
+2.	Write a function to check whether a string is blank or not.
+
+"My random string" -> false
+" " -> true
+12 -> false
+false -> false
 
 */
-function Convert(a) {
-	var output = ""
-	for (i = 0; i < a.length; i++) {
-		var x = a[i]
-	  if (!(isNaN(x) || !isFinite(x) || (x == null))) {
-	   output+=x
-	}
-	  }
-	
-	return output
- }
- var a=   [NaN, 0, 15, false, -22, '', undefined, 47, null]
- var b= [false]
- console.log(Convert(a))
+
+
+var a= "false" ;
+var result;
+
+function isBlank(a) {
+    
+
+    if ( a == " ") {
+        result= true;
+    } 
+    else {
+        result = false;
+    }
+
+return result
+}
+
+console.log(isBlank(a))

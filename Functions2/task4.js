@@ -1,20 +1,19 @@
 /*
-4. Write a program that calculates a number of integer values in the array.
-Input: [NaN, 23.1, 15, false, -22.5, '', 4, 7, null]
-Output: 3
-
+4.	Write a function to count the number of letter occurrences in a string.
+"My random string", "n" -> 2
 */
 
-function NumOfInt(array) {
+function numOfOccurrences(string, letter) {
+    
     var count=0;
-    for (var i = 0; i < array.length; i++) {
-      var y = parseFloat (array[i], 10)
-      var x = parseInt (array[i], 10)
-      if (!isNaN(x) && x == y) {
-        count++
-      }
-    }
-    return count
-}
 
-console.log(NumOfInt ([NaN, 23.1, 15, false, -22.5, '', 4, 7, null] ));
+    for (i = 0; i < string.length; i++) {
+        if (letter=== string[i]) 
+            count++;
+      }       
+    return count   
+   
+} 
+var string= "My random stringggggg";
+var letter= "g";
+console.log(numOfOccurrences(string, letter));

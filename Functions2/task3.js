@@ -1,21 +1,28 @@
 /*
-3. Write a program to filter out falsy values from the array.
-Input: [NaN, 0, 15, false, -22, '', undefined, 47, null]
-Output: [15, -22, 47]
+3.	Write a function that concatenates a given string n times (default is 1).
+	"Ha" -> "Ha"
+"Ha", 3 -> "HaHaHa"
 
 */
+function concstring(string, count) {
+    var string;
+    var count;
+    var array;
 
-function FilterFalsy(array) {
-   
-    var newarray= []
-    for (var i = 0, j=0; i < array.length; i++) {
-        var x = parseInt(array[i])
-        if (!isNaN(x) && (x != 0)) {
-            newarray[j++]=array[i]
+if (count==1) {
+    return string
+} 
+else {
+    for (i = 1; i <= count; i *= 2) {
+        if ((count & i) === i) {
+            array += string;
         }
+        string+= string;
     }
-    return newarray;
-}
+        return array
+    
+   
+    } }
+    console.log(concstring("Ha", 5));
 
-console.log(FilterFalsy ([NaN, 0, 15, false, -22, '', undefined, 47, null]));
-  
+    //ne radi!
