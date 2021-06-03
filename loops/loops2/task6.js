@@ -6,13 +6,14 @@ Input array: [3, 4, 12, 8]
 Output: The array isn’t symmetric.*/
 
 
-var a=[2, 4, -2, 7, -2, 4, 2]
-var start=0
-var end =0
+var arr = [1, 3, 4, 7, 4, 3, 1];
 
-for (start = 0, end=0; i < array.length; start++, end--) {
-    while (start<end) {
-        start===end
+var result = true;
+
+for (var start = 0, end = arr.length - 1; start < end; start++, end--) {
+    if (arr[start] !== arr[end]) {
+        result = false;
     }
 }
-console.log ("The array is symmetric")
+
+result ? console.log('Array is symetric') : console.log('Array is not symetric');

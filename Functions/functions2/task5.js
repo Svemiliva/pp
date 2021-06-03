@@ -3,18 +3,20 @@
 */
 
 function firstOccurrence(string, character) {
-    var position =0;
+    var position;
+ 
     for (i= 0; i < string.length; i++) {
         if (character=== string[i]) {
             position= i;
-            
-       
+            break;
+        } else {
+          position = -1;
         } 
-        
-        
+       
     }
     return position
-}
+} 
+     
 var string= "milena"
 var character= "l"
 console.log(firstOccurrence(string, character));
