@@ -6,7 +6,7 @@ For input 10, output should be “Input must be a number between 1 and 7”.*/
 
 
 
-var day = 10
+var day = 3
 
 switch (day) {
     case 1:
