@@ -126,16 +126,16 @@
         this.addBettingPlace = function (bettingPlace) {
             this.listOfBettingPlaces.push(bettingPlace);
         }
-        this.getBetsByCountry = function (land) {
+        this.getBetsByCountry = function (country) {
             var count = 0;
             this.listOfBettingPlaces.forEach(function (bettingPlace) {
                 bettingPlace.listOfPlayers.forEach(function (player) {
-                    if (player.country.name == land) {
+                    if (player.country.name == country) {
                         count++;
                     }
                 })
             });
-            return "There are " + count + " bets on " + land + ".";
+            return "There are " + count + " bets on " + country + ".";
         }
         this.getFormatedString = function () {
             var result = "";
