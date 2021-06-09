@@ -135,7 +135,7 @@
                     }
                 })
             });
-            return count;
+            return "There are " + count + " bets on " + land + ".";
         }
         this.getFormatedString = function () {
             var result = "";
@@ -146,7 +146,7 @@
                     result += "\t\t" + player.getFormatedString() + "\n";
                 })
             });
-            result += "There are " + this.getBetsByCountry("Serbia") + " bets on this country";
+            result += this.getBetsByCountry("Serbia") ;
             return result;
         }
     }
