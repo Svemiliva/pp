@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Movie festival</title>
+</head>
+
+<body> 
+      <h1>Movie festival</h1>
+    <div class=container>
+        <p>Please fill in the form:</p>
+            <p>Movie</p>
+        <div class=wrapper>
+         
+            <div class="createMovie">
+                <label>Title
+                    <input type="text" placeholder="Title">
+                </label>
+                <label>Length (min)
+                    <input type="number" placeholder="Length (min)">
+                </label>
+                <select name="genre" id="genre">
+                    <option value="Blanc">-</option>
+                    <option value="Action">Action</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Sci-fi">Sci-fi</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Horror">Horror</option>
+                </select>
+                <p id="errorMovie"></p>
+                <button id="createMovieBtn">Create Movie</button>
+            </div>
+            <p>Program</p>
+            <div class="createProgram">
+                <label>Date
+                    <input type="date" placeholder="mm/dd/yyyy">
+                </label>
+                <p id="errorCreateProgram"></p>
+                <button id="createProgramBtn">Create Program</button>
+                <hr>
+                <label>Movie
+                    <select name="movie" id="movie">
+                        <option>-</option>
+                    </select>
+                </label>
+                <label>Program
+                    <select name="program" id="program">
+                        <option>-</option>
+                    </select>
+                </label>
+                <p id="errorProgram"></p>
+                <button id="addMovieToProgramBtn">Add movie Program</button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./entities.js"></script>
+<script src="./form.js"></script>
+
+</html>
